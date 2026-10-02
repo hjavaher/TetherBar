@@ -1,0 +1,12 @@
+/build/
+/dist/
+.DS_Store
+*.xcuserstate
+*.p8
+*.p12
+*.mobileprovision
+*.provisionprofile
+.env
+.env.*
+*.keychain*
+__pycache__/
