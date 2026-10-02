@@ -1,0 +1,26 @@
+name: Bug report
+description: Report a TetherBar behavior or compatibility problem.
+body:
+  - type: markdown
+    attributes:
+      value: "For vulnerabilities, use Security → Report a vulnerability. Do not include phone names, SSIDs, device identifiers, IP addresses, or credentials in public reports."
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: TetherBar version, macOS version, Mac architecture, iOS version, Wi-Fi or USB, and whether a VPN is active.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: What happened?
+      description: Include steps to reproduce, expected behavior, and actual behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Redacted diagnostic output
+      description: Optional output from --diagnose. Review any attachment for personal information before posting.
+      render: text
